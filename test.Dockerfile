@@ -1,14 +1,14 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:8-jre-slim
 
 ENV APP_HOME=/opt/waves
 WORKDIR $APP_HOME
 
-#TODO curl conf from repo
-ADD waves.conf .
 RUN apt-get update && apt-get install -y curl jq wget \
     && JAR_REMOTE_PATH=$(curl "https://api.github.com/repos/wavesplatform/Waves/releases" \
         | jq -r '[.[] | select(.prerelease == true)] | first.assets[] | select(.name|endswith(".jar")) | .browser_download_url') \
-    && echo "Downloading '$JAR_REMOTE_PATH'. This may take a few minutes..."\
-    && wget $JAR_REMOTE_PATH -O $APP_HOME/waves.jar -q
+    && echo "Downloading waves.conf..." \
+    && wget https://raw.githubusercontent.com/msmolyakov/waves-private-node/master/waves.test.conf -qO $APP_HOME/waves.conf \
+    && echo "Downloading '$JAR_REMOTE_PATH'. This may take a few minutes..." \
+    && wget $JAR_REMOTE_PATH -qO $APP_HOME/waves.jar
 EXPOSE 6860 6869
 ENTRYPOINT ["java", "-jar", "waves.jar", "waves.conf"]
