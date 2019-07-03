@@ -7,7 +7,7 @@ The image is useful for local development of dApps on Waves blockchain. Uses act
 To run the node,\
 `docker run -d -p 6860:6860 -p 6869:6869 msmolyakov/waves-private-node`
 
-To view node API, open http://localhost:6869/
+To view node API documentation, open http://localhost:6869/
 
 ## Configuration details
 
@@ -19,12 +19,12 @@ The node is configured with:
 - default account with all Waves tokens (you can distribute these tokens to other accounts as you wish):
   ```
   rich account:
-      Seed text:           rich
-      Seed:                3vczFq
-      Account seed:        5sbw38pdc7td3RaUyS5roVYr24hfN2NtBohzoMLcTKtG
-      Private account key: AAA6e1SzLt49DzbzW7auuk3vkbBA6K1FdNP2BRnSPWd3
-      Public account key:  HTqgV95rPwnbHiAuXGDZSEiCWQbxHbeaLEWDdef8MiSN
-      Account address:     3MPxsaJvNXXkUn2566L2CWuo31wdgPi3mod
+      Seed text:           waves private node seed with waves tokens
+      Seed:                TBXHUUcVx2n3Rgszpu5MCybRaR86JGmqCWp7XKh7czU57ox5dgjdX4K4
+      Account seed:        HewBh5uTNEGLVpmDPkJoHEi5vbZ6uk7fjKdP5ghiXKBs
+      Private account key: 83M4HnCQxrDMzUQqwmxfTVJPTE9WdE7zjAooZZm2jCyV
+      Public account key:  AXbaBkJNocyrVpwqTzD4TpUY8fQ6eeRto9k1m2bNCzXV
+      Account address:     3M4qwDomRabJKLZxuXhwfqLApQkU592nWxF
   ```
 
 ## Image tags
