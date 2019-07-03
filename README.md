@@ -32,4 +32,4 @@ The node is configured with:
 You can use the following tags:
 
 - `latest`, `mainnet` - current version of Mainnet
-- `X.X.X` - specific version of Waves Node
+- `vX.X.X` - specific version of Waves Node
