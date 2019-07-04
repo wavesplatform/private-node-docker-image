@@ -5,7 +5,7 @@ The image is useful for local development of dApps on Waves blockchain. Uses act
 ## Getting started
 
 To run the node,\
-`docker run -d -p 6860:6860 -p 6869:6869 wavesplatform/private-node`
+`docker run -d -p 6860:6860 -p 6869:6869 wavesplatform/waves-private-node`
 
 To view node API documentation, open http://localhost:6869/
 
