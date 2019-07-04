@@ -16,7 +16,8 @@ The node is configured with:
 - faster generation of blocks (10s interval)
 - all features pre-activated
 - custom chain id `R`
-- default account with all Waves tokens (you can distribute these tokens to other accounts as you wish):
+- api_key `waves-private-node`
+- default miner account with all Waves tokens (you can distribute these tokens to other accounts as you wish):
   ```
   rich account:
       Seed text:           waves private node seed with waves tokens
