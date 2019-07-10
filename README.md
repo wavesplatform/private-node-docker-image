@@ -1,6 +1,6 @@
 # Waves private node
 
-The image is useful for local development of dApps on Waves blockchain. Uses actual Mainnet version by default.
+The image is useful for developing dApps and other smart contracts on Waves blockchain. Uses actual Mainnet version by default.
 
 ## Getting started
 
@@ -13,9 +13,9 @@ To view node API documentation, open http://localhost:6869/
 
 The node is configured with:
 
-- faster generation of blocks (10s interval)
+- faster generation of blocks (**10 sec** interval)
 - all features pre-activated
-- custom chain id `R`
+- custom chain id **R**
 - api_key `waves-private-node`
 - default miner account with all Waves tokens (you can distribute these tokens to other accounts as you wish):
   ```
@@ -27,6 +27,8 @@ The node is configured with:
       Public account key:  AXbaBkJNocyrVpwqTzD4TpUY8fQ6eeRto9k1m2bNCzXV
       Account address:     3M4qwDomRabJKLZxuXhwfqLApQkU592nWxF
   ```
+
+Full node configuration is available on Github in `waves.custom.conf`: https://github.com/wavesplatform/private-node-docker-image
 
 ## Image tags
 
