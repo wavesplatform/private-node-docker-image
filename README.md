@@ -15,7 +15,7 @@ The node is configured with:
 
 - faster generation of blocks (**10 sec** interval)
 - all features pre-activated
-- custom chain id **R**
+- custom chain id - **R**
 - api_key `waves-private-node`
 - default miner account with all Waves tokens (you can distribute these tokens to other accounts as you wish):
   ```
@@ -34,5 +34,5 @@ Full node configuration is available on Github in `waves.custom.conf`: https://g
 
 You can use the following tags:
 
-- `latest`, `mainnet` - current version of Mainnet
+- `latest` - current version of Mainnet
 - `vX.X.X` - specific version of Waves Node
