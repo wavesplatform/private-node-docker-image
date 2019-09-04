@@ -34,5 +34,6 @@ Full node configuration is available on Github in `waves.custom.conf`: https://g
 
 You can use the following tags:
 
-- `latest` - current version of Mainnet
+- `latest` - current version of Mainnet and Testnet
+- `stagenet` - current version of Stagenet
 - `vX.X.X` - specific version of Waves Node
