@@ -5,9 +5,15 @@ The image is useful for developing dApps and other smart contracts on Waves bloc
 ## Getting started
 
 To run the node,\
-`docker run -d -p 6860:6860 -p 6869:6869 wavesplatform/waves-private-node`
+`docker run -d --name waves-private-node -p 6869:6869 wavesplatform/waves-private-node`
 
 To view node API documentation, open http://localhost:6869/
+
+## Preserve blockchain state
+
+If you want to keep the blockchain state, then just stop the container instead of killing it, and start it again when needed:\
+`docker stop waves-private-node`
+`docker start waves-private-node`
 
 ## Configuration details
 
