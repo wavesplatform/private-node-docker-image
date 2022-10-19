@@ -1,3 +1,5 @@
+**This repo is no longer maintained. Private node is now published from the [node repo](https://github.com/wavesplatform/Waves/tree/HEAD/docker).**
+
 # Waves private node
 
 The image is useful for developing dApps and other smart contracts on Waves blockchain. Uses actual Mainnet version by default.
